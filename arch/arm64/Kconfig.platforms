@@ -428,4 +428,45 @@ config ARCH_ZYNQMP
 	help
 	  This enables support for Xilinx ZynqMP Family
 
+config ARCH_MSM8998
+        bool "Enable Support for Qualcomm MSM8998"
+	depends on ARCH_QCOM
+	select COMMON_CLK_MSM
+	help
+	This enables support for the MSM8998 chipset. If you do not
+	wish to build a kernel that runs on this chipset, say 'N' here.
+
+config ARCH_SDM660
+	bool "Enable Support for Qualcomm Technologies Inc SDM660"
+	depends on ARCH_QCOM
+	select COMMON_CLK
+	select COMMON_CLK_QCOM
+	select QCOM_GDSC
+	help
+	  This enables support for the SDM660 chipset.
+	  If you do not wish to build a kernel that runs
+	  on this chipset,say 'N' here.
+
+config ARCH_SDM630
+	bool "Enable Support for Qualcomm Technologies Inc SDM630"
+	depends on ARCH_QCOM
+	select COMMON_CLK
+	select COMMON_CLK_QCOM
+	select QCOM_GDSC
+	help
+	  This enables support for the SDM630 chipset.
+	  If you do not wish to build a kernel that runs
+	  on this chipset,say 'N' here.
+
+config ARCH_SDM636
+	bool "Enable Support for Qualcomm Technologies Inc SDM636"
+	depends on ARCH_QCOM
+	select COMMON_CLK
+	select COMMON_CLK_QCOM
+	select QCOM_GDSC
+	help
+	  This enables support for the SDM636 chipset.
+	  If you do not wish to build a kernel that runs
+	  on this chipset,say 'N' here.
+
 endmenu
